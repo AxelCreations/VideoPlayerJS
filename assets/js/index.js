@@ -4,6 +4,7 @@ import AutoPlay from './plugins/AutoPlay.js';
 
 //DOM Elements
 const buttonToggleTheme = document.querySelector('#toggleTheme');
+
 const video = document.querySelector('#video');
 const buttonTogglePlay = document.querySelector('#togglePlay');
 const buttonToggleSound = document.querySelector('#toggleSound');
@@ -25,4 +26,3 @@ const player = new MediaPlayer({
 
 // Themes switcher
 buttonToggleTheme.onclick = () => themeToggler.toggleTheme();
-
