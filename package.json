@@ -1,0 +1,25 @@
+{
+  "name": "video-player-js",
+  "version": "1.0.0",
+  "description": "Custom video player",
+  "main": "assets/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelCreations/VideoPlayerJS.git"
+  },
+  "keywords": [
+    "Video",
+    "Player",
+    "JS",
+    "TS"
+  ],
+  "author": "AxelCreations",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AxelCreations/VideoPlayerJS/issues"
+  },
+  "homepage": "https://github.com/AxelCreations/VideoPlayerJS#readme"
+}
