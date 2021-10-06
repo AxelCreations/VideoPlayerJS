@@ -1,7 +1,9 @@
+import MediaPlayer from '../MediaPlayer.js';
+
 class AutoPlay {
     constructor() {}
 
-    execute = (player) => {
+    public execute = (player: MediaPlayer): void => {
         player.mute();
         player.play();
     };

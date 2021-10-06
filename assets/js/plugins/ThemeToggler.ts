@@ -1,9 +1,9 @@
 class ThemeToggler {
     constructor() {}
 
-    toggleTheme() {
-        const BodyEl = document.querySelector("body");
-        const buttonToggleTheme = document.querySelector("#toggleTheme");
+    public toggleTheme() {
+        const BodyEl: HTMLBodyElement = document.querySelector("body");
+        const buttonToggleTheme: HTMLBodyElement = document.querySelector("#toggleTheme");
 
         if (BodyEl.getAttribute("id") === "dark") {
             BodyEl.setAttribute("id", "");

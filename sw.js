@@ -7,7 +7,7 @@ self.addEventListener('install', event => {
 self.addEventListener('fetch', event => {
     const request = event.request;
 
-    if(request.method != "GET") {
+    if(request.method !== "GET") {
         return;
     }
 
@@ -18,15 +18,15 @@ self.addEventListener('fetch', event => {
 async function precache() {
     const cache = await caches.open(VERSION);
     return cache.addAll([
-        '/',
-        '/index.html',
-        '/assets/js/index.js',
-        '/assets/js/MediaPlayer.js',
-        '/assets/js/plugins/AutoPause.js',
-        '/assets/js/plugins/AutoPlay.js',
-        '/assets/js/plugins/ThemeToggler.js',
-        '/assets/css/style.css',
-        '/assets/videos/boruto.mp4',
+        // '/',
+        // '/index.html',
+        // '/assets/js/index.js',
+        // '/assets/js/MediaPlayer.js',
+        // '/assets/js/plugins/AutoPause.js',
+        // '/assets/js/plugins/AutoPlay.js',
+        // '/assets/js/plugins/ThemeToggler.js',
+        // '/assets/css/style.css',
+        // '/assets/videos/boruto.mp4',
     ]);
 }
 
