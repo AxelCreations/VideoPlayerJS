@@ -1,6 +1,7 @@
 import ThemeToggler from './plugins/themeToggler.js';
 import MediaPlayer from './MediaPlayer.js';
 import AutoPlay from './plugins/AutoPlay.js';
+import AutoPause from './plugins/AutoPause.js';
 
 //DOM Elements
 const buttonToggleTheme = document.querySelector('#toggleTheme');
@@ -17,6 +18,7 @@ const player = new MediaPlayer({
     el: video,
     plugins: [
         new AutoPlay(),
+        new AutoPause(),
     ],
     controls: {
         togglePlay: buttonTogglePlay,
