@@ -1,12 +1,15 @@
+import {IMediaConfig, IControls} from "./utils/IMediaConfig";
+import IPlugin from "./utils/IPlugin";
+
 class MediaPlayer {
     Media: HTMLMediaElement;
-    Plugins: Array<any>;
-    Controls: any;
+    Plugins: Array<IPlugin>;
+    Controls: IControls;
 
-    constructor(config: any) {
+    constructor(config: IMediaConfig) {
         this.Media = config.el;
         this.Plugins = config.plugins || [];
-        this.Controls = config.controls || {};
+        this.Controls = config.controls || {togglePlay: null, toggleSound: null};
 
         this.Plugins.forEach(plugin => {
             plugin.execute(this);

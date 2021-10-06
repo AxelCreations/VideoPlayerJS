@@ -1,6 +1,7 @@
 import MediaPlayer from '../MediaPlayer.js';
+import IPlugin from '../utils/IPlugin.js';
 
-class AutoPlay {
+class AutoPlay implements IPlugin {
     constructor() {}
 
     public execute = (player: MediaPlayer): void => {

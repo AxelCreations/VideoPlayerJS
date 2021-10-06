@@ -1,6 +1,7 @@
-import MediaPlayer from '../MediaPlayer.js';
+import MediaPlayer from '../MediaPlayer';
+import IPlugin from '../utils/IPlugin';
 
-class AutoPause {
+class AutoPause implements IPlugin {
     private Threshold: number;
     private Player: MediaPlayer;
 
