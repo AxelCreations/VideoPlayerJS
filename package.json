@@ -4,7 +4,8 @@
   "description": "Custom video player",
   "main": "assets/index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "tsc src/js/index.ts --outDir assets/js --target es2021"
   },
   "repository": {
     "type": "git",

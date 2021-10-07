@@ -5,7 +5,7 @@ export interface IControls {
     toggleSound: HTMLBodyElement;
 }
 
-export interface IMediaConfig {
+interface IMediaConfig {
     el: HTMLMediaElement,
     plugins: Array<IPlugin>,
     controls: IControls

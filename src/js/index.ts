@@ -1,7 +1,7 @@
-import ThemeToggler from './plugins/themeToggler';
-import MediaPlayer from './MediaPlayer';
-import AutoPlay from './plugins/AutoPlay';
-import AutoPause from './plugins/AutoPause';
+import ThemeToggler from './plugins/themeToggler.js';
+import MediaPlayer from './MediaPlayer.js';
+import AutoPlay from './plugins/AutoPlay.js';
+import AutoPause from './plugins/AutoPause.js';
 
 //DOM Elements
 const buttonToggleTheme: HTMLBodyElement = document.querySelector('#toggleTheme');

@@ -11,7 +11,7 @@ class AutoPause implements IPlugin {
         this.handleVisibilityChange = this.handleVisibilityChange.bind(this);
     }
 
-    public execute(player: MediaPlayer) {
+    public execute(player: MediaPlayer): void {
         this.Player = player;
 
         const observer: IntersectionObserver = new IntersectionObserver(this.handleIntersection, {
@@ -20,10 +20,11 @@ class AutoPause implements IPlugin {
 
         observer.observe(this.Player.Media);
 
+        //Pause when the tab is inactive
         document.addEventListener("visibilitychange", this.handleVisibilityChange);
     }
 
-    private handleIntersection(entries: IntersectionObserverEntry[]) {
+    private handleIntersection(entries: IntersectionObserverEntry[]): void {
         const entry = entries[0];
 
         if (entry.intersectionRatio > this.Threshold) {
@@ -33,7 +34,7 @@ class AutoPause implements IPlugin {
         }
     };
 
-    private handleVisibilityChange() {
+    private handleVisibilityChange(): void {
         const isVisible: boolean = document.visibilityState === "visible";
         
         if (isVisible) {

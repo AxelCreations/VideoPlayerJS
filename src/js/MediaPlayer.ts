@@ -1,4 +1,4 @@
-import {IMediaConfig, IControls} from "./utils/IMediaConfig";
+import IMediaConfig, {IControls} from "./utils/IMediaConfig";
 import IPlugin from "./utils/IPlugin";
 
 class MediaPlayer {
